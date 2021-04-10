@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BoxerProfile
+namespace TheFight
 {
     public class Boxer
     {
         public string name;
         public string weight;
         public string height;
-        public string record;
+        public int record;
         public bool righty;
         static int tableWidth = 113;
 
-        public Boxer   (string name, string weight, string height, string record)
+        public Boxer   (string name, string weight, string height)
         {
             this.name = name;
             this.weight = weight;
             this.height = height;
-            this.record = record;
+            //this.record = record;
             //this.righty = righty;
         }
 
@@ -28,31 +28,31 @@ namespace BoxerProfile
             Console.WriteLine("");
             //loop, wrap all the options in a loop, stop loop with "9 exit" at the user's option. all of the options print to the screen, user choices as many as desired, then can exit at user's option
 
-            bool participantMayChooseOpponent = true;
+            //bool participantMayChooseOpponent = true;
 
-            while (participantMayChooseOpponent)
-            {
-                Console.WriteLine("Press 1 to Display Opponent's Name");
-                Console.WriteLine("Press 2 to Display Opponent's Weight, Height, and Record");
-                Console.WriteLine("Press 3 to check righty");
+            //while (participantMayChooseOpponent)
+            //{
+            //    Console.WriteLine("Press 1 to Display Opponent's Name");
+            //    Console.WriteLine("Press 2 to Display Opponent's Weight, Height, and Record");
+            //    Console.WriteLine("Press 3 to check righty");
                 
-                string participantSelection;
-                participantSelection = Console.ReadLine();
+            //    string participantSelection;
+            //    participantSelection = Console.ReadLine();
                 
-                if (participantSelection == "1")
-                {
-                    DisplayOpponentName();
-                }
-                else if (participantSelection == "2")
-                {
-                    DisplayOpponentWeightHeightRecord();
-                }
-                else if (participantSelection == "3")
-                {
-                    CheckRighty();
-                }
+            //    if (participantSelection == "1")
+            //    {
+            //        DisplayOpponentName();
+            //    }
+            //    else if (participantSelection == "2")
+            //    {
+            //        DisplayOpponentWeightHeightRecord();
+            //    }
+            //    else if (participantSelection == "3")
+            //    {
+            //        CheckRighty();
+            //    }
 
-            }
+            //}
 
             PrintLine();
             PrintRow();
